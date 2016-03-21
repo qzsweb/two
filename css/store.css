@@ -1,0 +1,248 @@
+html, body {
+    cursor: default;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: visible;
+}
+
+.storeImage {
+    width: 100%;
+    height: 100%;
+}
+.storeImage>.top{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.top>.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 25px;
+    padding:5px 0;
+    text-align: center;
+    z-index: 10;
+}
+.header>img{
+    display: inline-block;
+    width: 166px;
+    margin-top:9px;
+}
+.top>.twoStores{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top:0;
+    left:0;
+    padding-top:35px;
+    background-image: url(../images/31.jpg)/*tpa=http://121.43.231.188/yuanfang/Blackswancake/images/31.jpg*/;
+    background-repeat: no-repeat;
+    background-position: top center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    box-sizing: border-box;
+    background-clip: content-box;
+    
+}
+.twoStores>.artMuseum,
+.twoStores>.shops{
+    width: 50%;
+    height: 100%;
+    float:left;
+    position: relative;
+    top:0;
+    left:0;
+    cursor: pointer;
+}
+.twoStores>.artMuseum>.mask,
+.twoStores>.shops>.mask
+{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.1);
+    position: absolute;
+    top:0;
+    left:0;
+    display:none;
+}
+.twoStores .brief{
+    width: 60%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-left:-30%;
+    text-align: center;
+    color:#fff;
+    font-size: 12px;
+}
+.twoStores .brief>h3{
+    border:1px solid #fff;
+    padding:10px 20px;
+    display: inline-block;
+    margin-bottom:13px;
+}
+.twoStores .brief>h3>a{
+    display: block;
+    color:#fff;
+    font-size: 12px;
+}
+.twoStores .brief>span{
+    display: block;
+    font-family: 'simsun';
+}
+.twoStores .brief>p{
+    margin:2px 0;
+}
+.shops>.brief{
+    color:#615E5E;
+}
+.shops>.brief>h3{
+    border:1px solid #615E5E;
+}
+.shops>.brief>h3>a{
+    color:#615E5E;
+}
+.storeImage>.bottom{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.bottom>.storepics{
+    width: 100%;
+    height: 100%;
+}
+.storepics>ul.imgList{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.storepics>ul.imgList>li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    float:left;
+    /*-webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;*/
+}
+.storepics>ul.imgList>li>img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.storepics>ul.countNum{
+    display: none;
+}
+.bottom>.footer{
+    width: 100%;
+    position: absolute;
+    bottom:5%;
+    left:0;
+    display: flex;
+    text-align: center;
+    color:#fff;
+    padding:0 120px;
+    box-sizing: border-box;
+}
+.bottom>.cityselect{
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    top:10%;
+    left:50%;
+    margin-left:-80px;
+    z-index: 99;
+    text-align: center;
+}
+.cityselect>.cityselected,
+.cityselect>.cities{
+    position: absolute;
+    border:1px solid #dadad8;
+    padding:10px 30px;
+    display: inline-block;
+    color:#fff;
+    cursor: pointer;
+}
+.cityselect>.cityselected{
+    width: 50px;
+}
+.cityselect>.cities{
+    width: 150px;
+    top:4%;
+    left:28px;
+    border:none;
+    display: none;
+}
+.cityselect>.cities>li{
+    padding:10px 30px;
+    display: block;
+    margin-left:-35px;
+
+}
+.footer>.citiesAddr{
+    width: 100%;
+    display: flex;
+    margin:0 auto;
+}
+.footer>.citiesAddr>li{
+    flex: 1;
+    /*width: 20%;*/
+    display: inline-block;
+}
+.footer>.citiesAddr>li+li{
+    margin-left:25px;
+}
+.artMuseumPage{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    display: none;
+}
+.artMuseumPage>ul{
+    width: 100%;
+    height: 100%;
+}
+.artMuseumPage>ul>li{
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.artMuseumPage>ul>li:nth-child(1){
+    background-image: url(../images/111.jpg)/*tpa=http://121.43.231.188/yuanfang/Blackswancake/images/111.jpg*/;
+}
+.artMuseumPage>ul>li:nth-child(2){
+    background-image: url(../images/31-22.jpg)/*tpa=http://121.43.231.188/yuanfang/Blackswancake/images/31-22.jpg*/;
+}
+.artMuseumPage>ul>li:nth-child(3){
+    background-image: url(../images/222.jpg)/*tpa=http://121.43.231.188/yuanfang/Blackswancake/images/222.jpg*/;
+}
+.artMuseumPage>ul>li>.productsDetails{
+    color:#fff;
+    width: 600px;
+    left:30%;
+}
+.artMuseumPage>ul>li>.productsDetails>h3{
+    border:none;
+    font-size: 14px;
+    font-weight: normal;
+}
+.artMuseumPage>ul>li:nth-child(1)>.productsDetails{
+    color:#5b5b5b;
+    top:10%;
+}
+.artMuseumPage>ul>li:nth-child(2)>.productsDetails{
+    top:15%;
+}
+.artMuseumPage>ul>li:nth-child(3)>.productsDetails{
+    top:80%;
+}

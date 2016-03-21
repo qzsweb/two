@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>黑天鹅蛋糕 | BLACKSWAN</title>
+    <link rel="stylesheet" href="../css/basic.css" tppabs="http://121.43.231.188/yuanfang/Blackswancake/css/basic.css"/>
+    <link rel="stylesheet" href="../css/store.css" tppabs="http://121.43.231.188/yuanfang/Blackswancake/css/store.css"/>
+    <link rel="shortcut icon" href="../favicon.ico" tppabs="http://121.43.231.188/yuanfang/Blackswancake/favicon.ico">
+    <script src="../lib/jquery/jquery-1.11.3.js" tppabs="http://121.43.231.188/yuanfang/Blackswancake/lib/jquery/jquery-1.11.3.js"></script>
+</head>
+<body>
+<div class="storeImage">
+    <!--页面导航-->
+    <div class="nav">
+        <ul>
+            <li><a href="../index.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/index.html">首页</a></li>
+            <li><a href="category.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/category.html">产品系列</a></li>
+            <li><a href="store.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/store.html">店面形象</a></li>
+            <li><a href="brandImage.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/brandImage.html">品牌故事</a></li>
+            <li><a href="aboutUs.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/aboutUs.html">关于我们</a></li>
+            <li><a href="login.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/login.html" class="fl">登录</a><span class="fl"> | </span><a href="login.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/login.html" class="fl">注册</a></li>
+            <li><a href="cart.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/cart.html" class="fl">购物车</a><span class="fl"> | </span><a href="javascript:if(confirm(%27http://121.43.231.188/yuanfang/Blackswancake/html/selectCityPage.html  \n\nThis file was not retrieved by Teleport Pro, because the server reports that this file cannot be found.  \n\nDo you want to open it from the server?%27))window.location=%27http://121.43.231.188/yuanfang/Blackswancake/html/selectCityPage.html%27" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/selectCityPage.html" id="cityName" class="fl">北京</a></li>
+        </ul>
+    </div>
+    <!--上面部分-logo+摄影艺术馆和店铺查询-->
+    <div class="top">
+        <!--顶部logo部分-->
+        <div class="header">
+            <img src="../images/logo.png" tppabs="http://121.43.231.188/yuanfang/Blackswancake/images/logo.png" alt=""/>
+        </div>
+        <!--摄影艺术馆和店铺查询部分-->
+        <div class="twoStores">
+            <div class="artMuseum" id="arts">
+                <span class="mask"></span>
+
+                <div class="brief">
+                    <h3><a href="#artMuseumPage">罗红艺术摄影馆</a></h3>
+                    <span>-</span>
+
+                    <p>凝聚自然与纯粹之美的艺术殿堂</p>
+                    <span>-</span>
+                </div>
+            </div>
+            <div class="shops" id="stores">
+                <span class="mask"></span>
+
+                <div class="brief" >
+                    <h3><a href="#blackswanStores">黑天鹅尊享店</a></h3>
+                    <span>-</span>
+
+                    <p>敬请查询黑天鹅各城市尊享店</p>
+                    <span>-</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--下面部分-店铺图片和店铺地址-->
+    <div class="bottom" id='blackswanStores'>
+        <div class="cityselect">
+            <span class="cityselected">北京</span>
+            <ul class="cities">
+                <li>北京</li>
+                <li>天津</li>
+                <li>塘沽</li>
+                <li>长春</li>
+                <li>成都</li>
+                <li>沈阳</li>
+                <li>大连</li>
+                <li>哈尔滨</li>
+                <li>石家庄</li>
+            </ul>
+        </div>
+        <!--店铺图片-->
+        <div class="storepics" id="slidePics">
+            <!--动态生成幻灯片-->
+            <!--<ul>
+                <li class="fl"></li>
+                <li class="fl"></li>
+                <li class="fl"></li>
+            </ul>-->
+        </div>
+        <!--底部店铺地址-->
+        <div class="footer">
+            <ul class="citiesAddr">
+                <!--动态生成-->
+                <!--<li class="fl">
+                    <div class="address">
+                        <h5>北京黑天鹅华普店</h5>
+                        <span>-</span>
+                        <p>朝阳区朝阳门外大街19号 华普大厦一层</p>
+                        <span>-</span>
+                        <p>-010-65801105-</p>
+                    </div>
+                </li>
+                <li class="fl"></li>
+                <li class="fl"></li>
+                <li class="fl"></li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="artMuseumPage newProducts" id="artMuseumPage">
+    <ul>
+        <li>
+            <div class="productsDetails">
+                <h3>罗红摄影艺术馆</h3>
+                <span>-</span>
+                <p>位于北京顺义区机场高速杨林大道出口近侧，<br/>
+                    将于2016年6月隆重启幕。黑天鹅创始人罗红先生同时也是国际知名的<br/>
+                    自然摄影家、环保活动家。
+                </p>
+                <span>-</span>
+                <p>罗红先生从事摄影艺术二十年，足迹踏遍全球，<br/>
+                    用独特的摄影语言来表现自然<br/>
+                    与生命的纯粹、唯美，探索心灵与万物之间最本真的共鸣，<br/>
+                    唤醒人们对大自然的敬畏与热爱。
+                </p>
+                <span>-</span>
+                <p>罗红艺术摄影馆将以宏大的规模完整呈现他二十年<br/>
+                    的摄影历程和作品精华，同时也将延续罗红先生的环保梦想——用毕生的时间唤醒<br/>
+                    更多人热爱自然、保护环境的意识，为中国环保事业尽一份微薄之力。
+                </p>
+                <span>-</span></div>
+
+        </li>
+        <li>
+            <div class="productsDetails">
+                <h3>黑天鹅旗舰店</h3>
+                <span>-</span>
+                <p>国际著名设计大师吉冈德仁<br/>
+                    领衔设计的黑天鹅旗舰店，紧邻罗红摄影艺术馆，<br/>
+                    由旗舰店主体、下午茶区、VIP区和好利来精品店组成，<br/>
+                    环抱在精致优雅的东方园林之中。
+                </p>
+                <span>-</span>
+            </div>
+
+        </li>
+        <li>
+            <div class="productsDetails">
+                <h3>冰雪的透明宫殿</h3>
+                <span>-</span>
+                <p>吉冈德仁先生是国际著名的艺术家和建筑大师，其作品曾为法国蓬皮杜<br/>
+                    艺术中心、纽约现代艺术博物馆、德国Vitra设计博物馆永久收藏，并长期为卡地亚、爱马仕、<br/>
+                    三宅一生等国际顶级品牌设计产品与展示空间。他设计的黑天鹅旗舰店延续其<br/>
+                    一贯简洁风格，将是一座冰雪的透明宫殿，
+                </p>
+                <span>-</span>
+            </div>
+
+        </li>
+    </ul>
+</div>
+</body>
+</html>
+<script src="../js/pptSlide.js" tppabs="http://121.43.231.188/yuanfang/Blackswancake/js/pptSlide.js"></script>
+<script src="../js/store.js" tppabs="http://121.43.231.188/yuanfang/Blackswancake/js/store.js"></script>
+<script>
+    $(function () {
+        loopImage.imgurl = [
+            "<img src=\"../images/1.jpg\"/>",
+            "<img src=\"../images/2.jpg\"/>",
+            "<img src=\"../images/3.jpg\"/>"];
+        loopImage.init("#slidePics");
+        $('.cityselect').hover(function () {
+            $(".cityselect>.cities").show();
+        }, function () {
+            $(".cityselect>.cities").hide();
+        })
+    })
+</script>

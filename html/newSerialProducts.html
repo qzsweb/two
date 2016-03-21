@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>黑天鹅蛋糕 | BLACKSWAN</title>
+    <link rel="stylesheet" href="../css/basic.css" tppabs="http://121.43.231.188/yuanfang/Blackswancake/css/basic.css"/>
+    <link rel="stylesheet" href="../css/newSerialProducts.css" tppabs="http://121.43.231.188/yuanfang/Blackswancake/css/newSerialProducts.css"/>
+    <link rel="shortcut icon" href="../favicon.ico" tppabs="http://121.43.231.188/yuanfang/Blackswancake/favicon.ico">
+    <script src="../lib/jquery/jquery-1.11.3.js" tppabs="http://121.43.231.188/yuanfang/Blackswancake/lib/jquery/jquery-1.11.3.js"></script>
+</head>
+
+<body>
+<div class="newSerial">
+    <div class="nav nav2 nav3">
+        <span class="navIcon"></span>
+        <ul>
+            <li><a href="javascript:;" id="goback">返回</a></li>
+            <li><a href="newSerialProducts.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/newSerialProducts.html">全新系列</a></li>
+            <li><a href="classic.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/classic.html">经典系列</a></li>
+            <li><a href="category.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/category.html">产品系列</a></li>
+            <li><a href="../index.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/index.html">首页</a></li>
+        </ul>
+    </div>
+    <div class="newProducts newPros">
+        <ul>
+            <!-- <li>
+              <div class="productsDetails">
+                <div class="smallLogo">
+                  <img src="images/ms-logo.png" alt="">
+                </div>
+                <h3>黑天鹅</h3>
+                <span>-</span>
+                <p>
+                  极致纤细与纯粹之美，梦幻般的纪念日
+                  <br/> 天鹅小巢是用直径零点几毫米的伊索玛特糖丝手工编织而成。
+                </p>
+                <span>-</span>
+                <span class="price">&yen;2999</span>
+                <span>-</span>
+                <div class="addCartBtn">
+                  <a href="javascript:;"></a>
+                </div>
+              </div>
+            </li> -->
+        </ul>
+    </div>
+    <div class="mask">
+        <div class="bookInfo">
+            <h3 class="cakeName"></h3>
+            <span class="closeBtn" id="closeBtn"></span>
+            <table>
+                <tbody>
+                <tr>
+                    <th>规格(cm)</th>
+                    <th>重量(克)</th>
+                    <th>可供食用人数</th>
+                    <th>价格(元)</th>
+                </tr>
+                <tr id="small">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="middle">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="big">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+            <ul class='buyBtn'>
+                <li><span id="selectSize">请选择规格</span>
+                    <ol class="selecteSize">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </li>
+                <li><a href="javascript:;" id="buy">立即购买</a></li>
+            </ul>
+            <div class="material">
+                <span>-</span>
+                <h5>主要原料</h5>
+
+                <p class="mainMaterial"></p>
+                <span>-<span>
+                <h5>冷藏保存</h5>
+                <span class="coldStorage">0-5℃</span>
+            </div>
+        </div>
+        <div class="buyBox">
+            <div class="pop_box">
+                <span class='closeBox'></span>
+                <div class="topBox"><span>请选择蛋糕尺寸</span></div>
+                <div class="bottomBox">
+                    <a href="javascript:;" id="btnLeft">确定</a>
+                    <a href="javascript:;" id="btnRight">取消</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
+<script src="../js/base.js" tppabs="http://121.43.231.188/yuanfang/Blackswancake/js/base.js"></script>
+<script type="text/javascript" src="../js/newSerialProducts.js" tppabs="http://121.43.231.188/yuanfang/Blackswancake/js/newSerialProducts.js"></script>
+<script>
+    var data = [{
+        name: "白天鹅",
+        description1: "极致纤细与纯粹之美，梦幻般的纪念日",
+        description2: "天鹅小巢是用直径零点几毫米的伊索玛特糖丝手工编织而成。",
+        price: 2999,
+        left: "43.4%",
+        top: "22% ",
+        backgroundImage: "../images/75_thumb_G_1448003100285.jpg"
+
+    }, {
+        name: "晨雪",
+        description1: "灵性与纯洁的完美搭配，干净剔透，玲珑无邪，",
+        description2: "漫步晨雪，早安，美好",
+        price: "799",
+        left: "44.1%",
+        top: "22%",
+        backgroundImage: "../images/116_thumb_G_1448003072361.jpg"
+    }, {
+        name: "圣洁",
+        description1: "纯与白间的盛会，好像缤纷落雪纯洁自然，又似人间仙境如梦之幻、美妙无比。",
+        description2: "",
+        price: "1299",
+        left: "43.4%",
+        top: "22%",
+        backgroundImage: "../images/79_thumb_G_1447799245558.jpg"
+    }, {
+        name: "至尊2015",
+        description1: "精致到毫米的羽翼，让白色更加典雅；庄园级的巧克力，更彰显尊贵身份",
+        description2: "",
+        price: "999",
+        left: "43.4%",
+        top: "12%",
+        backgroundImage: "../images/83_thumb_G_1448002460480.jpg"
+    }, {
+        name: "挚友",
+        description1: "友谊是一条浓浓的小河，顺利相会，阳光映射彼此的双眼，让感动弥漫得更久远",
+        description2: "",
+        price: "1099",
+        left: "6.6%",
+        top: "22%",
+        backgroundImage: "../images/85_thumb_G_1448002829672.jpg"
+    }, {
+        name: "美丽人生（黑）",
+        description1: "曾经的感动，愈久弥香，华丽旅行，邂逅风景，",
+        description2: "晶红缤纷，美不胜收",
+        price: "999",
+        left: "43.4%",
+        top: "32%",
+        backgroundImage: "../images/78_thumb_G_1447636371089.jpg"
+    }, {
+        name: "幸福时光",
+        description1: "幸福的时候，时光像微风一样柔和，像波纹一样惬意",
+        description2: "",
+        price: "1299",
+        left: "45.7%",
+        top: "32%",
+        backgroundImage: "../images/82_thumb_G_1447636382791.jpg"
+    }, {
+        name: "黑天鹅",
+        description1: "唯美之作，典藏时光",
+        description2: "",
+        price: "1299",
+        left: "8.5%",
+        top: "22%",
+        backgroundImage: "../images/77_thumb_G_1448003033953.jpg"
+    }, {
+        name: "美丽人生（白）",
+        description1: "曾经的感动，愈久弥香，华丽旅行，邂逅风景，晶红缤纷，美不胜收",
+        description2: "",
+        price: "999",
+        left: "44.1%",
+        top: "32%",
+        backgroundImage: "../images/93_thumb_G_1447978738709.jpg"
+    }, {
+        name: "挚爱",
+        description1: "玫瑰与牛奶，热情与纯洁，每句浓情的诗词，",
+        description2: "都是一层层爱情的彼岸，融化于心底的挚爱就在你眼前",
+        price: "999",
+        left: "3.3%",
+        top: "12%",
+        backgroundImage: "../images/84_thumb_G_1448002667892.jpg"
+    }, {
+        name: "天鹅湖",
+        description1: "粉的雪，蓝的天，轻的风，呼吸的三连音，滑过冰影，天鹅的湖，洁白的华尔兹",
+        description2: "",
+        price: "1299",
+        left: "15.6%",
+        top: "22%",
+        backgroundImage: "../images/80_thumb_G_1447978588017.jpg"
+    }, {
+        name: "馨语",
+        description1: "水的记忆是冰，冰的记忆是雪，",
+        description2: "雪的记忆是风，吹来回眸的低语",
+        price: "799",
+        left: "44.1%",
+        top: "22%",
+        backgroundImage: "../images/81_thumb_G_1448010878994.jpg"
+    }, {
+        name: "水晶梦（果冻）",
+        description1: "涟漪是时间的承诺，梦想拥有水晶的依恋，一层层荡开，一次次圆满。",
+        description2: "纯透明的造型工艺与清爽如水的玫瑰、荔枝口味演绎诗一般的纯真情怀。",
+        price: "1299",
+        left: "5.9%",
+        top: "22%",
+        backgroundImage: "../images/94_thumb_G_1448002949224.jpg"
+    }, {
+        name: "天鹅颂",
+        description1: "白与黑的优雅，在涟漪的韵律中，歌吟自然的纯真。",
+        description2: "",
+        price: "1099",
+        left: "48.7%",
+        top: "12%",
+        backgroundImage: "../images/95_thumb_G_1448002177927.jpg"
+    }];
+</script>
+<script>
+    var buyInfo = [{
+        size: [{
+            small: "15cm"
+        }, {
+            middle: "20cm"
+        }, {
+            big: "30cm"
+        }],
+        weight: [{
+            small: 520
+        }, {
+            middle: 1200
+        }, {
+            big: 3000
+        }],
+        edibleNum: [{
+            small: "4-6人"
+        }, {
+            middle: "6-8人"
+        }, {
+            big: "8-14人"
+        }],
+        price: [{
+            small: "http://121.43.231.188/yuanfang/Blackswancake/html/¥2999.00"
+        }, {
+            middle: "http://121.43.231.188/yuanfang/Blackswancake/html/¥3999.00"
+        }, {
+            big: "http://121.43.231.188/yuanfang/Blackswancake/html/¥5999.00"
+        }],
+        material: "单一产地马达加斯加黑巧克力、法国白巧克力、法国牛奶巧克力法国黑巧克力、欧洲天然淡奶油、欧洲进口牛奶、大溪地香草、法国依索玛特糖",
+        coldStorage: "0-5℃",
+        name: "白天鹅"
+    }, {
+        size: [{
+            small: "15cm"
+        }, {
+            middle: "20cm"
+        }, {
+            big: "30cm"
+        }],
+        weight: [{
+            small: 500
+        }, {
+            middle: 1000
+        }, {
+            big: 2000
+        }],
+        edibleNum: [{
+            small: "4-6人"
+        }, {
+            middle: "6-8人"
+        }, {
+            big: "8-14人"
+        }],
+        price: [{
+            small: "http://121.43.231.188/yuanfang/Blackswancake/html/¥799.00"
+        }, {
+            middle: "http://121.43.231.188/yuanfang/Blackswancake/html/¥1299.00"
+        }, {
+            big: "http://121.43.231.188/yuanfang/Blackswancake/html/¥2999.00"
+        }],
+        material: "单一产地马达加斯加牛奶巧克力、马达加斯加黑巧克力、欧洲天然淡奶油、欧洲进口牛奶、云南玫瑰、加拿大冰酒、法国依索玛特糖",
+        coldStorage: "2-7℃",
+        name: "晨雪"
+    }, {
+        size: [{
+            small: "15cm"
+        }, {
+            middle: "20cm"
+        }, {
+            big: "30cm"
+        }],
+        weight: [{
+            small: 600
+        }, {
+            middle: 1000
+        }, {
+            big: 2000
+        }],
+        edibleNum: [{
+            small: "4-6人"
+        }, {
+            middle: "6-8人"
+        }, {
+            big: "8-14人"
+        }],
+        price: [{
+            small: "http://121.43.231.188/yuanfang/Blackswancake/html/¥1299.00"
+        }, {
+            middle: "http://121.43.231.188/yuanfang/Blackswancake/html/¥2299.00"
+        }, {
+            big: "http://121.43.231.188/yuanfang/Blackswancake/html/¥4999.00"
+        }],
+        material: "单一产地马达加斯加黑巧克力、马达加斯加牛奶巧克力，欧洲天然淡奶油、欧洲进口牛奶、云南玫瑰、法国树莓果溶、韩国幼砂糖、荔枝酒、法国依索玛特糖",
+        coldStorage: "2-7℃",
+        name: "圣洁"
+    }, {
+        size: [{
+            small: "14cmx14cm"
+        }, {
+            middle: "20cmx20cm"
+        }, {
+            big: "25cmx25cm"
+        }],
+        weight: [{
+            small: 550
+        }, {
+            middle: 1100
+        }, {
+            big: 2200
+        }],
+        edibleNum: [{
+            small: "6-10人"
+        }, {
+            middle: "10-14人"
+        }, {
+            big: "14-20人"
+        }],
+        price: [{
+            small: "http://121.43.231.188/yuanfang/Blackswancake/html/¥999.00"
+        }, {
+            middle: "http://121.43.231.188/yuanfang/Blackswancake/html/¥2999.00"
+        }, {
+            big: "http://121.43.231.188/yuanfang/Blackswancake/html/¥3999.00"
+        }],
+        material: "单一产地马达加斯加黑巧克力，欧洲天然淡奶油、欧洲进口牛奶、新西兰大黄油、美国山核桃、伊朗开心果、土耳其榛果、韩国幼砂糖、法国依索玛特糖",
+        coldStorage: "2-7℃",
+        name: "至尊2015"
+    }, {
+        size: [{
+            small: "14cmx14cm"
+        }, {
+            middle: "20cmx20cm"
+        }, {
+            big: "25cmx25cm"
+        }],
+        weight: [{
+            small: 600
+        }, {
+            middle: 1100
+        }, {
+            big: 2200
+        }],
+        edibleNum: [{
+            small: "6-10人"
+        }, {
+            middle: "10-14人"
+        }, {
+            big: "14-20人"
+        }],
+        price: [{
+            small: "http://121.43.231.188/yuanfang/Blackswancake/html/¥1099.00"
+        }, {
+            middle: "http://121.43.231.188/yuanfang/Blackswancake/html/¥1999.00"
+        }, {
+            big: "http://121.43.231.188/yuanfang/Blackswancake/html/¥3699.00"
+        }],
+        material: "单一产地马达加斯加黑巧克力，欧洲天然淡奶油、欧洲进口牛奶、新西兰大黄油、美国山核桃、伊朗开心果、土耳其榛果、韩国幼砂糖、法国依索玛特糖",
+        coldStorage: "0-5℃",
+        name: "挚友"
+    }, {
+        size: [{
+            small: "15cm"
+        }, {
+            middle: "20cm"
+        }, {
+            big: "30cm"
+        }],
+        weight: [{
+            small: 550
+        }, {
+            middle: 1000
+        }, {
+            big: 2700
+        }],
+        edibleNum: [{
+            small: "4-6人"
+        }, {
+            middle: "6-8人"
+        }, {
+            big: "8-14人"
+        }],
+        price: [{
+            small: "http://121.43.231.188/yuanfang/Blackswancake/html/¥999.00"
+        }, {
+            middle: "http://121.43.231.188/yuanfang/Blackswancake/html/¥1999.00"
+        }, {
+            big: "http://121.43.231.188/yuanfang/Blackswancake/html/¥3999.00"
+        }],
+        material: "单一产地马达加斯加黑巧克力、马达加斯加牛奶巧克力，法国白巧克力、欧洲天然淡奶油、韩国幼砂糖、欧洲进口牛奶、巧克力扁桃仁脆、云南玫瑰、意大利西西里岛开心果酱、法国树莓果溶脂、法国依索玛特糖",
+        coldStorage: "2-7℃",
+        name: "美丽人生(黑)"
+    }, {
+        size: [{
+            small: "15cm"
+        }, {
+            middle: "20cm"
+        }, {
+            big: "30cm"
+        }],
+        weight: [{
+            small: 600
+        }, {
+            middle: 1200
+        }, {
+            big: 3000
+        }],
+        edibleNum: [{
+            small: "4-6人"
+        }, {
+            middle: "6-8人"
+        }, {
+            big: "8-14人"
+        }],
+        price: [{
+            small: "http://121.43.231.188/yuanfang/Blackswancake/html/¥1299.00"
+        }, {
+            middle: "http://121.43.231.188/yuanfang/Blackswancake/html/¥2199.00"
+        }, {
+            big: "http://121.43.231.188/yuanfang/Blackswancake/html/¥4999.00"
+        }],
+        material: "单一产地马达加斯加黑巧克力、法国白巧克力、法国牛奶巧克力、法国黑巧克力、欧洲天然淡奶油、欧洲进口牛奶、大溪地香草、法国依索玛特糖",
+        coldStorage: "0-5℃",
+        name: "幸福时光"
+    }, {
+        size: [{
+            small: "15cm"
+        }, {
+            middle: "20cm"
+        }, {
+            big: "30cm"
+        }],
+        weight: [{
+            small: 520
+        }, {
+            middle: 1200
+        }, {
+            big: 3000
+        }],
+        edibleNum: [{
+            small: "4-6人"
+        }, {
+            middle: "6-8人"
+        }, {
+            big: "8-14人"
+        }],
+        price: [{
+            small: "http://121.43.231.188/yuanfang/Blackswancake/html/¥1299.00"
+        }, {
+            middle: "http://121.43.231.188/yuanfang/Blackswancake/html/¥2199.00"
+        }, {
+            big: "http://121.43.231.188/yuanfang/Blackswancake/html/¥4999.00"
+        }],
+        material: "单一产地马达加斯加黑巧克力、法国白巧克力、法国牛奶巧克力、法国黑巧克力、欧洲天然淡奶油、欧洲进口牛奶、大溪地香草、法国依索玛特糖",
+        coldStorage: "0-5℃",
+        name: "黑天鹅"
+    }, {
+        size: [{
+            small: "15cm"
+        }, {
+            middle: "20cm"
+        }, {
+            big: "30cm"
+        }],
+        weight: [{
+            small: 600
+        }, {
+            middle: 1000
+        }, {
+            big: 2000
+        }],
+        edibleNum: [{
+            small: "4-6人"
+        }, {
+            middle: "6-8人"
+        }, {
+            big: "8-14人"
+        }],
+        price: [{
+            small: "http://121.43.231.188/yuanfang/Blackswancake/html/¥999.00"
+        }, {
+            middle: "http://121.43.231.188/yuanfang/Blackswancake/html/¥1999.00"
+        }, {
+            big: "http://121.43.231.188/yuanfang/Blackswancake/html/¥3999.00"
+        }],
+        material: "单一产地马达加斯加黑巧克力、马达加斯加牛奶巧克力，欧洲天然淡奶油、欧洲进口牛奶、云南玫瑰、法国树莓果溶、韩国幼砂糖、荔枝酒、法国依索玛特糖",
+        coldStorage: "2-7℃",
+        name: "美丽人生(白)"
+    }, {
+        size: [{
+            small: "15cm"
+        }, {
+            middle: "20cm"
+        }, {
+            big: ""
+        }],
+        weight: [{
+            small: 460
+        }, {
+            middle: 1100
+        }, {
+            big: ""
+        }],
+        edibleNum: [{
+            small: "4-6人"
+        }, {
+            middle: "6-8人"
+        }, {
+            big: ""
+        }],
+        price: [{
+            small: "http://121.43.231.188/yuanfang/Blackswancake/html/¥999.00"
+        }, {
+            middle: "http://121.43.231.188/yuanfang/Blackswancake/html/¥1999.00"
+        }, {
+            big: ""
+        }],
+        material: "单一产地马达加斯加黑巧克力、马达加斯加牛奶巧克力，法国白巧克力、欧洲天然淡奶油、韩国幼砂糖、欧洲进口牛奶、巧克力扁桃仁脆、云南玫瑰、意大利西西里岛开心果酱、法国树莓果溶脂、法国依索玛特糖",
+        coldStorage: "2-7℃",
+        name: "挚爱"
+    }, {
+        size: [{
+            small: "15cm"
+        }, {
+            middle: "20cm"
+        }, {
+            big: "30cm"
+        }],
+        weight: [{
+            small: 550
+        }, {
+            middle: 1000
+        }, {
+            big: 2700
+        }],
+        edibleNum: [{
+            small: "4-6人"
+        }, {
+            middle: "6-8人"
+        }, {
+            big: "8-14人"
+        }],
+        price: [{
+            small: "http://121.43.231.188/yuanfang/Blackswancake/html/¥1299.00"
+        }, {
+            middle: "http://121.43.231.188/yuanfang/Blackswancake/html/¥2299.00"
+        }, {
+            big: "http://121.43.231.188/yuanfang/Blackswancake/html/¥4999.00"
+        }],
+        material: "单一产地马达加斯加牛奶巧克力、马达加斯加黑巧克力，法国白巧克力、欧洲天然淡奶油、韩国幼砂糖、欧洲进口牛奶、巧克力扁桃仁脆、云南玫瑰、意大利开心果酱、法国树莓果溶、法国依索玛特糖",
+        coldStorage: "2-7℃",
+        name: "天鹅湖"
+    }, {
+        size: [{
+            small: "15cm"
+        }, {
+            middle: "20cm"
+        }, {
+            big: "30cm"
+        }],
+        weight: [{
+            small: 500
+        }, {
+            middle: 1000
+        }, {
+            big: 2000
+        }],
+        edibleNum: [{
+            small: "4-6人"
+        }, {
+            middle: "6-8人"
+        }, {
+            big: "8-14人"
+        }],
+        price: [{
+            small: "http://121.43.231.188/yuanfang/Blackswancake/html/¥799.00"
+        }, {
+            middle: "http://121.43.231.188/yuanfang/Blackswancake/html/¥1299.00"
+        }, {
+            big: "http://121.43.231.188/yuanfang/Blackswancake/html/¥2999.00"
+        }],
+        material: "单一产地马达加斯加牛奶巧克力、马达加斯加黑巧克力、欧洲天然淡奶油、欧洲进口牛奶、云南玫瑰、加拿大冰酒、法国依索玛特糖",
+        coldStorage: "2-7℃",
+        name: "馨语"
+    }, {
+        size: [{
+            small: "14cmx14cm"
+        }, {
+            middle: ""
+        }, {
+            big: ""
+        }],
+        weight: [{
+            small: 550
+        }, {
+            middle: ""
+        }, {
+            big: ""
+        }],
+        edibleNum: [{
+            small: "6-10人"
+        }, {
+            middle: ""
+        }, {
+            big: ""
+        }],
+        price: [{
+            small: "http://121.43.231.188/yuanfang/Blackswancake/html/¥1299.00"
+        }, {
+            middle: ""
+        }, {
+            big: ""
+        }],
+        material: "欧洲天然淡奶油、云南玫瑰、法国树莓果溶、韩国幼砂糖、荔枝酒、法国葡萄糖浆、果冻、法国依索玛特糖",
+        coldStorage: "2-7℃",
+        name: "水晶梦(果冻)"
+    }, {
+        size: [{
+            small: "14cmx14cm"
+        }, {
+            middle: "20cmx20cm"
+        }, {
+            big: "25cmx25cm"
+        }],
+        weight: [{
+            small: 600
+        }, {
+            middle: 1100
+        }, {
+            big: 2200
+        }],
+        edibleNum: [{
+            small: "6-10人"
+        }, {
+            middle: "10-14人"
+        }, {
+            big: "14-20人"
+        }],
+        price: [{
+            small: "http://121.43.231.188/yuanfang/Blackswancake/html/¥1099.00"
+        }, {
+            middle: "http://121.43.231.188/yuanfang/Blackswancake/html/¥1999.00"
+        }, {
+            big: "http://121.43.231.188/yuanfang/Blackswancake/html/¥3699.00"
+        }],
+        material: "单一产地马达加斯加黑巧克力，欧洲天然淡奶油、欧洲进口牛奶、新西兰大黄油、美国山核桃、伊朗开心果、土耳其榛果、韩国幼砂糖、法国依索玛特糖",
+        coldStorage: "2-7℃",
+        name: "天鹅颂"
+    }];
+
+</script>

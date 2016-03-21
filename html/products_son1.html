@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>黑天鹅蛋糕 | BLACKSWAN</title>
+    <link rel="stylesheet" href="../css/basic.css" tppabs="http://121.43.231.188/yuanfang/Blackswancake/css/basic.css"/>
+    <link rel="stylesheet" href="../css/products_son1.css" tppabs="http://121.43.231.188/yuanfang/Blackswancake/css/products_son1.css"/>
+    <link rel="shortcut icon" href="../favicon.ico" tppabs="http://121.43.231.188/yuanfang/Blackswancake/favicon.ico">
+    <script src="../lib/jquery/jquery-1.11.3.js" tppabs="http://121.43.231.188/yuanfang/Blackswancake/lib/jquery/jquery-1.11.3.js"></script>
+</head>
+
+<body>
+<div class="product_son1">
+    <!--系列页面导航开始-->
+    <div class="nav nav2">
+        <span class="navIcon"></span>
+        <ul>
+            <li><a href="javascript:;" id="goback">返回</a></li>
+            <li><a href="newSerialProducts.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/newSerialProducts.html">全新系列</a></li>
+            <li><a href="classic.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/classic.html">经典系列</a></li>
+            <li><a href="category.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/category.html">产品系列</a></li>
+            <li><a href="../index.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/index.html">首页</a></li>
+        </ul>
+    </div>
+    <!--系列页面导航结束-->
+    <!--主要产品系列-->
+    <div class="proSerials">
+        <!--字符串拼接,动态生成-->
+        <ul>
+            <!-- <li>
+              <a href="#">
+                <span class="mask"></span>
+                <div class="serialInfo">
+                  <h2>全新系列</h2>
+                  <div class="serialInfoDetail">
+                    <span class="mask"></span>
+                    <span>-</span>
+                    <p>华丽升级的全新款</p>
+                    <span>-</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="mask"></span>
+                <div class="serialInfo">
+                  <h2>经典系列</h2>
+                  <div class="serialInfoDetail">
+                    <span>-</span>
+                    <p>历久弥新的经典款</p>
+                    <span>-</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="mask"></span>
+                <div class="serialInfo">
+                  <h2>婚礼系列</h2>
+                  <div class="serialInfoDetail">
+                    <span>-</span>
+                    <p>敬请期待</p>
+                    <span>-</span>
+                  </div>
+                </div>
+              </a>
+            </li> -->
+        </ul>
+    </div>
+</div>
+</body>
+
+</html>
+<script src="../js/products_son1.js" tppabs="http://121.43.231.188/yuanfang/Blackswancake/js/products_son1.js"></script>
+<script type="text/javascript">
+    /*每个系列的数据---名称,描述,图片,和目标链接页面*/
+    $(function () {
+        var data = [{
+            serialName: "全新系列",
+            description: "华丽升级的全新款",
+            image: "../images/1447114573367196974.jpg",
+            targetURL: "newSerialProducts.html"/*tpa=http://121.43.231.188/yuanfang/Blackswancake/html/newSerialProducts.html*/
+        }, {
+            serialName: "经典系列",
+            description: "历久弥新的经典款",
+            image: "../images/1445987077509661404.jpg",
+            targetURL: "classic.html"/*tpa=http://121.43.231.188/yuanfang/Blackswancake/html/classic.html*/
+        }, {
+            serialName: "婚礼系列",
+            description: "敬请期待",
+            image: "../images/1444857918743888719.jpg",
+            targetURL: "javascript:;"
+        }];
+        for (var i = 0; i < data.length; i++) {
+            var option = {
+                serialName: data[i].serialName,
+                description: data[i].description,
+                image: data[i].image,
+                targetURL: data[i].targetURL
+            };
+            var serial = new Serial(option);
+            $(".product_son1>.proSerials>ul").append(serial.bindDOM());
+            serial.bindEvents();
+        }
+    })
+</script>

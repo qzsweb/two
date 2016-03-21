@@ -1,0 +1,247 @@
+/*
+* @Author: Thinkpad
+* @Date:   2016-01-27 20:10:55
+* @Last Modified by:   Thinkpad
+* @Last Modified time: 2016-01-29 00:09:31
+*/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: visible;
+}
+
+.newSerial {
+    width: 100%;
+    height: 100%;
+}
+.newPros > ul > li > .productsDetails{
+    cursor: pointer;
+}
+
+.newPros > ul > li > .productsDetails > span.price{
+    font: 12px/20px "microsoft yahei";
+}
+
+.newPros > ul > li > .productsDetails > .addCartBtn {
+    width: 100%;
+    height: 34px;
+    text-align: center;
+}
+
+.newPros > ul > li > .productsDetails > .addCartBtn > a {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-top: 10px;
+    background: url(../images/xd-btn.png)/*tpa=http://121.43.231.188/yuanfang/Blackswancake/images/xd-btn.png*/ no-repeat center top;
+}
+
+.newSerial > .mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: none;
+}
+
+.newSerial > .mask > .bookInfo {
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    width: 45.83%;
+    margin-left: -22.92%;
+    color: #535353;
+    text-align: center;
+    font-size: 12px;
+}
+
+.newSerial > .mask > .bookInfo > h3 {
+    font-size: 16px;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+}
+
+.newSerial > .mask > .bookInfo > .closeBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background-image: url(../images/iconfont-guanbi.png)/*tpa=http://121.43.231.188/yuanfang/Blackswancake/images/iconfont-guanbi.png*/;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.newSerial > .mask > .bookInfo > table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.newSerial > .mask > .bookInfo > table th {
+    height: 40px;
+    width: 25%;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.newSerial > .mask > .bookInfo > table tr {
+    height: 25px;
+}
+
+.newSerial > .mask > .bookInfo > table td {
+    width: 25%;
+}
+
+.newSerial > .mask > .bookInfo > table td + td,
+.newSerial > .mask > .bookInfo > table th + th {
+    border-left: 1px solid #939393;
+}
+
+.newSerial > .mask > .bookInfo > .buyBtn {
+    margin: 30px 0 20px;
+    width: 100%;
+}
+
+.newSerial > .mask > .bookInfo > .buyBtn > li {
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.newSerial > .mask > .bookInfo > .buyBtn > li:nth-child(1) {
+    background: #e4e4e4;
+    margin-top: 5px;
+}
+
+.newSerial > .mask > .bookInfo > .buyBtn > li:nth-child(2) {
+    margin-top: 10px;
+    background-color: #f1f1f1;
+}
+
+.newSerial > .mask > .bookInfo > .buyBtn > li:nth-child(1) span {
+    display: block;
+    background-color: #e6e6e6;
+    overflow: hidden;
+    width: 100%;
+    height: 30px;
+    position: relative;
+}
+
+.newSerial > .mask > .bookInfo > .buyBtn > li:nth-child(1) span::before,
+.newSerial > .mask > .bookInfo > .buyBtn > li:nth-child(1) span::after {
+    content: '';
+    position: absolute;
+    right: 11px;
+    border: 3px solid #959595;
+    z-index: 10;
+}
+
+.newSerial > .mask > .bookInfo > .buyBtn > li:nth-child(1) span::before {
+    top: 6px;
+    border-color: transparent transparent #959595 transparent;
+}
+
+.newSerial > .mask > .bookInfo > .buyBtn > li:nth-child(1) span::after {
+    top: 16px;
+    border-color: #959595 transparent transparent transparent;
+}
+
+.newSerial > .mask > .bookInfo > .buyBtn > li > .selecteSize {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    background-color: #ececec;
+    z-index: 3;
+    display: none;
+}
+
+.newSerial > .mask > .bookInfo > .buyBtn > li:nth-child(2) > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #7d7d7d;
+}
+
+.newSerial > .mask > .bookInfo > .material {
+    margin-bottom: 20px;
+    line-height: 24px;
+}
+
+.newSerial > .mask > .bookInfo > .material > h5 {
+    font-family: "simsun";
+}
+
+.newSerial > .mask > .buyBox {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    width: 24%;
+    display: block;
+    margin-left: -12%;
+    text-align: center;
+    display: none;
+}
+
+.newSerial > .mask > .buyBox > .pop_box {
+    width: 100%;
+    height: 120px;
+    border: 1px solid skyblue;
+    margin-bottom: 20px;
+    background-color: #fff;
+    position: relative;
+}
+
+.newSerial > .mask > .buyBox > .pop_box > .closeBox {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 12px;
+    height: 12px;
+    background: url(../images/iconfont-guanbi.png)/*tpa=http://121.43.231.188/yuanfang/Blackswancake/images/iconfont-guanbi.png*/;
+    background-size: 12px 12px;
+    z-index: 2;
+    cursor:pointer;
+}
+
+.newSerial > .mask > .buyBox > .pop_box > .topBox > span {
+    display: block;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 80px;
+}
+
+.newSerial > .mask > .buyBox > .pop_box > .bottomBox {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.newSerial > .mask > .buyBox > .pop_box > .bottomBox > a {
+    float: left;
+    width: 50%;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    color: #333;
+    border-top: 1px solid #666;
+    background-color: #c1c3c2;
+}
+
+.newSerial > .mask > .buyBox > .pop_box > .bottomBox > a:nth-child(1) {
+    border-right: 1px solid #666;
+}
+
+.newSerial > .mask > .buyBox > .pop_box > .bottomBox > a:nth-child(2) {
+    margin-left: -1px;
+}

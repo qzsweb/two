@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>黑天鹅蛋糕 | BLACKSWAN</title>
+    <link rel="stylesheet" href="css/basic.css" tppabs="http://121.43.231.188/yuanfang/Blackswancake/css/basic.css"/>
+    <link rel="stylesheet" href="css/index.css" tppabs="http://121.43.231.188/yuanfang/Blackswancake/css/index.css"/>
+    <link rel="shortcut icon" href="favicon.ico" tppabs="http://121.43.231.188/yuanfang/Blackswancake/favicon.ico">
+    <script src="lib/jquery/jquery-1.11.3.js" tppabs="http://121.43.231.188/yuanfang/Blackswancake/lib/jquery/jquery-1.11.3.js"></script>
+    <script>
+        $(function(){
+            var cityName=window.location.hash.slice(1);
+            $("#cityName").html(cityName);
+        })
+    </script>
+</head>
+<body>
+<!--锚点部分-->
+<div class="links">
+    <a href="#" name="北京"></a>
+    <a href="#" name="天津"></a>
+    <a href="#" name="塘沽"></a>
+    <a href="#" name="长春"></a>
+    <a href="#" name="成都"></a>
+    <a href="#" name="沈阳"></a>
+    <a href="#" name="大连"></a>
+    <a href="#" name="哈尔滨"></a>
+    <a href="#" name="石家庄"></a>
+</div>
+<!--logo部分-->
+<div class="mainLogo"></div>
+<!--index页面导航条开始-->
+    <div class="nav">
+        <ul>
+            <li><a href="index.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/index.html">首页</a></li>
+            <li><a href="html/category.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/category.html">产品系列</a></li>
+            <li><a href="html/store.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/store.html">店面形象</a></li>
+            <li><a href="html/brandImage.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/brandImage.html">品牌故事</a></li>
+            <li><a href="html/aboutUs.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/aboutUs.html">关于我们</a></li>
+            <li><a href="html/login.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/login.html" class="fl">登录</a><span class="fl"> | </span><a href="html/login.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/login.html" class="fl">注册</a></li>
+            <li><a href="html/cart.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/cart.html" class="fl">购物车</a><span class="fl"> | </span><a href="javascript:if(confirm(%27http://121.43.231.188/yuanfang/selectCityPage.html  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://121.43.231.188/yuanfang/selectCityPage.html%27" tppabs="http://121.43.231.188/yuanfang/selectCityPage.html" id="cityName" class="fl">北京</a></li>
+        </ul>
+    </div>
+<!--index页面导航条结束-->
+</body>
+</html>
+

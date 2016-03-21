@@ -1,0 +1,202 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    overflow: visible;
+    color:#7d7d7d;
+}
+.cart{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.cart>.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 25px;
+    padding:5px 0;
+    text-align: center;
+    z-index: 10;
+}
+.header>img{
+    display: inline-block;
+    width: 166px;
+    margin-top:9px;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top:0;
+    left:0;
+    padding-top:35px;
+    background-image: url(../images/08.jpg)/*tpa=http://121.43.231.188/yuanfang/Blackswancake/images/08.jpg*/;
+    background-repeat: no-repeat;
+    background-position: top center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    box-sizing: border-box;
+    background-clip: content-box;
+}
+.cartPro{
+    width: 700px;
+    margin:0 auto;
+    padding:40px 0;
+}
+.cartPro>h3{
+    text-align: center;
+    margin:20px 0;
+}
+.cartPro>.pros{
+    text-align: center;
+    margin: 10px 0;
+    padding:6px 0;
+    border-bottom: 1px solid #898989;
+    border-top:1px solid #898989;
+}
+.cartPro>.cartBox dl{
+    height: 29px;
+    overflow: hidden;
+}
+.cartPro>.cartBox dl>dt{
+    width: 14%;
+    float:left;
+    padding: 5px 0 5px 20px;
+}
+.cartPro>.cartBox dl>dt+dt{
+    border-left: 1px solid #a8a8a8;
+}
+.line{
+    height: 30px;
+    width: 100%;
+    background-color: #dcdcdc;
+    margin:20px 0;
+}
+.auxiliary{
+    text-align: center;
+    margin:10px 0;
+    border-top:1px solid #898989;
+    border-bottom: 1px solid #898989;
+    padding:6px 0;
+}
+.auxiliaryBox{
+    margin-bottom: 20px;
+}
+.auxiliaryBox>dl{
+    overflow: hidden;
+    position: relative;
+}
+.auxiliaryBox>dl>dt{
+    float: left;
+}
+.auxiliaryBox>dl>dt.addDishes{
+    width: 80%;
+}
+.auxiliaryBox>dl>dt.count{
+    width: 19%;
+    float:right;
+    border-left: 1px solid #a8a8a8;
+    padding-left: 20px;
+}
+.auxiliaryBox>dl.total{
+    margin-top: 10px;
+}
+.auxiliaryBox>dl.total>dt.all{
+    text-align: right;
+    background-color: #f4f4f4;
+    height: 30px;
+    line-height: 30px;
+    padding-right: 20px;
+}
+.auxiliaryBox>dl.total>dt.price{
+    width: 19%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #eaeaea;
+    float:right;
+    border:none;
+}
+.nextStep{
+    width: 100%;
+    line-height: 30px;
+    background-color: #efefef;
+    text-align: center;
+}
+.nextStep>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color:#7d7d7d;
+}
+.fushu{
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    bottom:0;
+    left:0;
+    text-align: center;
+    line-height: 25px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.fushu>a{
+    display: block;
+    width: 100%;
+    height: 25px;
+    color:#7d7d7d;
+}
+.fushu>span{
+    display: block;
+    width: 100%;
+    height: 10px;
+    background: url(../images/dow.png)/*tpa=http://121.43.231.188/yuanfang/Blackswancake/images/dow.png*/ no-repeat center;
+    -webkit-background-size: 10px;
+    background-size: 10px;
+}
+.fushuPage{
+    width: 100%;
+    height: 100%    ;
+    background: url(../images/4_thumb_G_1447813271844.jpg)/*tpa=http://121.43.231.188/yuanfang/Blackswancake/images/4_thumb_G_1447813271844.jpg*/ no-repeat top center;
+    background-size: cover;
+    position: absolute;
+    overflow: hidden;
+}
+.fushuPage>.newProducts{
+    top:32%;
+    left:22.90%;
+    position: absolute;
+    width: 300px;
+}
+.qty>span{
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    border:1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+    font:700 16px/15px "microsoft yahei";
+}
+.qty>input{
+    width: 27px;
+    height: 18px;
+    text-align: center;
+    border:1px solid #eee;
+    margin-top:-3px;
+    line-height: 16px;
+}
+.qty>.buy{
+    width: 85px;
+    height: 30px;
+    background-color: #f8f8f8;
+    line-height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: center;
+}
+.qty>.buy>a{
+    color: #7d7d7d;
+}

@@ -1,0 +1,167 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    overflow: hidden;
+}
+.nav:hover li > a {
+    color: #fff;
+}
+.nav li > a:hover {
+    color: #a3a3a3;
+}
+
+.login{
+    width: 100%;
+    height: 100%;
+}
+.login>.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 25px;
+    padding:5px 0;
+    text-align: center;
+    z-index: 10;
+}
+.header>img{
+    display: inline-block;
+    width: 166px;
+    margin-top:9px;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top:0;
+    left:0;
+    padding-top:35px;
+    background-image: url(../images/22.jpg)/*tpa=http://121.43.231.188/yuanfang/Blackswancake/images/22.jpg*/;
+    background-repeat: no-repeat;
+    background-position: top center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    box-sizing: border-box;
+    background-clip: content-box;
+}
+.main>.dialog{
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-top:-24px;
+    margin-left:-74px;
+    text-align: center;
+    width: 148px;
+    height: 48px;
+    font:500 14px/48px "microsoft yahei";
+    background: rgba(0, 0, 0, 0.5);
+    color:#fff;
+    border-radius:5px;
+    display: none;
+    z-index: 100000;
+}
+.main>.userLogin,
+.main>.userlogon{
+    width: 50%;
+    height: 100%;
+   float:left;
+    padding-top:40%;
+    text-align: center;
+    position: relative;
+}
+.userLogin>.userInfo,
+.userlogon>.userInfo,
+.userlogon>.registration{
+    width: 60%;
+    position: absolute;
+    top:20%;
+    left:50%;
+    margin-left:-30%;
+}
+.userInfo>h3{
+    border:1px solid #323232;
+    color:#dbdbdb;
+    display: inline-block;
+    padding:15px 45px;
+    margin-bottom: 35px;
+}
+.userInfo>form{
+    display: block;
+}
+.userInfo>form>input{
+    display:block;
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    line-height: 1.6em;
+    background-color: #222;
+    color:#d0d0d0;
+}
+.userInfo>form>input:nth-child(2){
+    background-color: #202020;
+    margin-bottom: 20px;
+}
+.userInfo>form>input:nth-child(3){
+    background-color: #1f1f1f;
+    margin-bottom:10px;
+    cursor: pointer;
+}
+.userInfo a{
+    display: block;
+    padding:0 10px;
+    color:#b2b2b2;
+    text-align: right;
+}
+.registration>h3{
+    color:#676767;
+    border:1px solid rgba(0,0,0,0.1)
+}
+.registration>form>input:nth-child(1){
+    background-color:#e6e6e6;
+    color:#6d6d6d;
+}
+.registration>form>input:nth-child(3){
+    background-color:#ebebeb;
+    color:#888888;
+    margin-bottom: 0;
+    cursor: text;
+}
+.registration>form>input:nth-child(4){
+    background-color:#f0f0f0;
+    color:#7a7a7a;
+    margin-bottom: 0;
+}
+.registration>form>input:nth-child(5){
+    background-color:#f5f5f5;
+    color:#6d6d6d;
+    margin-bottom: 20px;
+}
+.registration>form>input:nth-child(6){
+    background-color:#fff;
+    color:#626262;
+    cursor: pointer;
+}
+.registration>form{
+    position: relative;
+}
+.registration>form>.getCode{
+    position: absolute;
+    right:-80px;
+    top:0;
+    color:#707070;
+}
+.forgetPassword .userInfo>form>input{
+    margin-bottom: 10px;
+}
+.forgetPassword .userInfo>form>input{
+    background-color: #222;
+    color:#d0d0d0;
+}
+.forgetPassword .registration>form>input{
+    background-color: #e6e6e6;
+    color:#626262;
+}

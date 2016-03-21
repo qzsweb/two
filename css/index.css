@@ -1,0 +1,19 @@
+html,body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('../images/01.jpg')/*tpa=http://121.43.231.188/yuanfang/Blackswancake/images/01.jpg*/;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}
+/*Ò³Ãælogo*/
+.mainLogo{
+    position: absolute;
+    top:10%;
+    width: 100%;
+    height: 100%;
+    background: url('../images/logo1.png')/*tpa=http://121.43.231.188/yuanfang/Blackswancake/images/logo1.png*/ 50% 14.1% /230px no-repeat;
+}
+

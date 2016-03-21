@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>黑天鹅蛋糕 | BLACKSWAN</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="../css/basic.css" tppabs="http://121.43.231.188/yuanfang/Blackswancake/css/basic.css"/>
+    <link rel="stylesheet" href="../css/cart.css" tppabs="http://121.43.231.188/yuanfang/Blackswancake/css/cart.css"/>
+    <link rel="shortcut icon" href="../favicon.ico" tppabs="http://121.43.231.188/yuanfang/Blackswancake/favicon.ico">
+    <script src="../lib/jquery/jquery-1.11.3.js" tppabs="http://121.43.231.188/yuanfang/Blackswancake/lib/jquery/jquery-1.11.3.js"></script>
+</head>
+<body>
+<!--页面导航-->
+<div class="nav">
+    <ul>
+        <li><a href="../index.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/index.html">首页</a></li>
+        <li><a href="category.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/category.html">产品系列</a></li>
+        <li><a href="store.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/store.html">店面形象</a></li>
+        <li><a href="brandImage.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/brandImage.html">品牌故事</a></li>
+        <li><a href="aboutUs.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/aboutUs.html">关于我们</a></li>
+        <li><a href="login.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/login.html" class="fl">登录</a><span class="fl"> | </span><a href="login.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/login.html" class="fl">注册</a></li>
+        <li><a href="cart.html" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/cart.html" class="fl">购物车</a><span class="fl"> | </span><a href="javascript:if(confirm(%27http://121.43.231.188/yuanfang/Blackswancake/html/selectCityPage.html  \n\nThis file was not retrieved by Teleport Pro, because the server reports that this file cannot be found.  \n\nDo you want to open it from the server?%27))window.location=%27http://121.43.231.188/yuanfang/Blackswancake/html/selectCityPage.html%27" tppabs="http://121.43.231.188/yuanfang/Blackswancake/html/selectCityPage.html" id="cityName" class="fl">北京</a></li>
+    </ul>
+</div>
+<div class="cart">
+    <div class="header">
+        <img src="../images/logo.png" tppabs="http://121.43.231.188/yuanfang/Blackswancake/images/logo.png" alt=""/>
+    </div>
+    <div class="main">
+        <div class="cartPro">
+            <h3>购物车</h3>
+
+            <div class="pros">产品</div>
+            <div class="cartBox">
+                <dl>
+                    <dt>名称</dt>
+                    <dt>规格</dt>
+                    <dt>餐具</dt>
+                    <dt>数量</dt>
+                    <dt>单价</dt>
+                    <dt>小计</dt>
+                </dl>
+            </div>
+            <div class="line"></div>
+            <div class="auxiliary">附属产品</div>
+            <div class="auxiliaryBox">
+                <dl>
+                    <dt class='addDishes'>
+                        <span>
+                            <input type="checkbox" name="" id=""/>增加额外餐具
+                        </span>
+                    </dt>
+                    <dt class="count"><span>小计</span></dt>
+                </dl>
+                <dl class="total">
+                    <dt class='addDishes all'><span>总计(不含运费)</span></dt>
+                    <dt class="count price"><span class="totalPrice">999</span></dt>
+                </dl>
+            </div>
+            <div class="nextStep">
+                <a href="javascript:;">下一步</a>
+            </div>
+        </div>
+    </div>
+    <div class="fushu">
+        <a href="#fushu">附属产品</a>
+        <span class='triangle'></span>
+    </div>
+</div>
+<div class="fushuPage" id="fushu">
+    <div class="newProducts">
+        <ul>
+            <li>
+                <div class="productsDetails">
+                    <div class="smallLogo">
+                        <img src="../images/ms-logo.png" tppabs="http://121.43.231.188/yuanfang/Blackswancake/images/ms-logo.png" alt="">
+                    </div>
+                    <h3>叉子</h3>
+                    <span>-</span>
+                    <p>
+                       ¥10.00
+                    </p>
+                    <span>-</span>
+                    <div class="qty">
+                        <span id="reduce">-</span>
+                        <input type="text" value="1" id="qty"/>
+                        <span id="add">+</span>
+                        <div class="buy">
+                            <a href="javascript:;">立即购买</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+<script src="../js/store.js" tppabs="http://121.43.231.188/yuanfang/Blackswancake/js/store.js"></script>
+<script src="../js/cart.js" tppabs="http://121.43.231.188/yuanfang/Blackswancake/js/cart.js"></script>

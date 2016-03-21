@@ -1,0 +1,68 @@
+html, body {
+    cursor: default;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: visible;
+}
+
+.iceCream {
+    width: 100%;
+    height: 100%;
+}
+
+.iceCream > .iceCreamPros {
+    width: 100%;
+    height: 100%;
+}
+
+/*.iceCream>.iceCreamPros>ul{
+    width: 100%;
+    height: 100%;
+}*/
+.iceCream > .iceCreamPros > ul > li:nth-child(1) {
+    background-image: url(../images/44_thumb_G_1448005044211.jpg)/*tpa=http://121.43.231.188/yuanfang/Blackswancake/images/44_thumb_G_1448005044211.jpg*/;
+}
+
+.iceCream > .iceCreamPros > ul > li:nth-child(2) {
+    background-image: url(../images/45_thumb_G_1448005734423.jpg)/*tpa=http://121.43.231.188/yuanfang/Blackswancake/images/45_thumb_G_1448005734423.jpg*/;
+}
+
+.iceCream > .iceCreamPros > ul > li:nth-child(3) {
+    background-image: url(../images/88_thumb_G_1448005754700.jpg)/*tpa=http://121.43.231.188/yuanfang/Blackswancake/images/88_thumb_G_1448005754700.jpg*/;
+}
+
+.iceCream > .iceCreamPros > ul > li:nth-child(4) {
+    background-image: url(../images/89_thumb_G_1446793283491.jpg)/*tpa=http://121.43.231.188/yuanfang/Blackswancake/images/89_thumb_G_1446793283491.jpg*/;
+}
+
+.iceCream > .iceCreamPros > ul > li:nth-child(1) > .productsDetails {
+    top: 15%;
+    left: 10%;
+}
+
+.iceCream > .iceCreamPros > ul > li:nth-child(1) > .productsDetails > h3 {
+    width: 150px;
+}
+
+.iceCream > .iceCreamPros > ul > li:nth-child(2) > .productsDetails {
+    right: -4%;
+    bottom: 10%;
+}
+
+.iceCream > .iceCreamPros > ul > li:nth-child(3) > .productsDetails {
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    /*text-align: center;*/
+}
+
+.iceCream > .iceCreamPros > ul > li:nth-child(3) > .productsDetails > .smallLogo {
+    width: 100%;
+    /*text-align: center;*/
+}
+
+.iceCream > .iceCreamPros > ul > li:nth-child(4) > .productsDetails {
+    top: 50%;
+    left: -12%;
+}

@@ -1,0 +1,161 @@
+html,body{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+.brandImage{
+    width: 100%;
+    height: 100%;
+}
+.top>.twoStores{
+    background-image: url(../images/32.jpg)/*tpa=http://121.43.231.188/yuanfang/Blackswancake/images/32.jpg*/;
+}
+.artMuseum>.brief{
+    top:60%;
+    left:40%;
+}
+.shops>.brief{
+    top:5%;
+    left:50%;
+}
+.twoStores .brief>h3{
+    border:1px solid #5d5d5d;
+}
+.twoStores .brief>h3>a,
+.twoStores .brief
+{
+    color:#615E5E;
+}
+
+.brandImage>.bottom{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: visible;
+}
+.bottom>.profile{
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+.profile>ul.leader{
+    width: 100%;
+    height: 100%;
+}
+.profile>ul.leader>li{
+    /*position: absolute;
+    top:0;
+    left:0;*/
+    width: 100%;
+    height: 100%;
+    display: block;
+    float: left;
+    position: relative;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.profile>ul.leader>li>.productsDetails{
+    width: 600px;
+    color:#fff;
+    position: absolute;
+    top:35%;
+    left:1%;
+    text-align: center;
+}
+.profile>ul>li>.productsDetails>h3{
+    border:none;
+}
+.profile>ul>li:nth-child(1){
+    background-image: url(../images/32-1.jpg)/*tpa=http://121.43.231.188/yuanfang/Blackswancake/images/32-1.jpg*/;
+}
+.profile>ul>li:nth-child(2){
+    background-image: url(../images/32-4.jpg)/*tpa=http://121.43.231.188/yuanfang/Blackswancake/images/32-4.jpg*/;
+}
+.bottom>.ceoPics{
+    width: 100%;
+    height: 100%;
+    position:relative;
+    top:100%;
+
+}
+.ceoPics>ul{
+    width: 100%;
+    height: 100%;
+}
+.ceoPics>ul>li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background-position: top center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+.ceoPics>.arrow{
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top:50%;
+    left: 0;
+    margin-top:-40px;
+    z-index: 100;
+}
+.ceoPics>.arrow>.arrow_next,
+.ceoPics>.arrow>.arrow_prev{
+    position: absolute;
+    top:0;
+    width: 47px;
+    height: 80px;
+}
+.ceoPics>.arrow>.arrow_next{
+    right:10px;
+    background: url(../images/right.png)/*tpa=http://121.43.231.188/yuanfang/Blackswancake/images/right.png*/ no-repeat center center;
+}
+.ceoPics>.arrow>.arrow_prev{
+    left:10px;
+    background: url(../images/left.png)/*tpa=http://121.43.231.188/yuanfang/Blackswancake/images/left.png*/ no-repeat center center;
+}
+.ceoPics>ul>li>.productsDetails{
+    position: absolute;
+    width: 400px;
+    top:40%;
+    right:10%;
+    color:#fff;
+    margin-left:-200px;
+}
+.ceoPics>ul>li>.productsDetails>h3{
+    border:none;
+}
+
+.artMuseumPage>ul>li:nth-child(1){
+    background-image: url(../images/32-011.jpg)/*tpa=http://121.43.231.188/yuanfang/Blackswancake/images/32-011.jpg*/;
+}
+.artMuseumPage>ul>li:nth-child(2){
+    background-image: url(../images/32-02.jpg)/*tpa=http://121.43.231.188/yuanfang/Blackswancake/images/32-02.jpg*/;
+}
+.artMuseumPage>ul>li:nth-child(1)>.productsDetails{
+    width: 320px;
+    top:14%;
+    left:15%;
+}
+.artMuseumPage>ul>li:nth-child(2)>.productsDetails{
+    width: 530px;
+    top:50%;
+    left:50%;
+    padding:20px 0;
+    margin-left:-250px;
+    margin-top:-8%;
+    border-top:1px solid #fff;
+    border-bottom:1px solid #fff;
+    text-align: left;
+    color:#fff;
+
+}
